@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ホームページ</title>
+    <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,60 +14,69 @@
         </div>
         <nav>
             <ul>
-                <li>職業訓練受講中</li>
-                <li>おすすめサイト</li>
-                <li>MYギャラリー</li>
-                <li>おすすめ動画</li>
+                <li><a href="#s1">職業訓練受講中</a></li>
+                <li><a href="#s2">おすすめサイト</a></li>
+                <li><a href="#s3">MYギャラリー</a></li>
+                <li><a href="#s4">おすすめ動画</a></li>
             </ul>
         </nav>
     </header>
     <div class="main">
-        <img src="image/dog.jpg" alt="メインビジュアル画像">
-        <div class="catch">
+        <img src="image/main_visual.jpg" alt="メインビジュアル画像">
+        <div class="main-catch">
             <h1>Nameのホームページへようこそ</h1>
             <p>よろしくお願いします。</p>
         </div>
     </div>
     <div class="pankuzu">
         <ul>
-            <li>情報処理2月&gt;</li>
-            <li>Name</li>
+            <li>情報処理2月 &gt;</li>
+            <li><a href="">Name</a></li>
         </ul>
     </div>
     <article>
         <section class="section1">
-            <h1>職業訓練受講中</h1>
+            <h1 id="s1">職業訓練受講中</h1>
             <div class="s1-container">
                 <div class="s1-content1">
-                    <p>カリキュラム</p>
+                    <h1>カリキュラム</h1>
                     <table>
                         <caption>カリキュラム時間数</caption>
                         <tr>
                             <th>科目</th>
-                            <td>Office</td>
-                            <td>Python</td>
-                            <td>PHP</td>
-                            <td>ポートフォリオ</td>
+                            <th>時間数</th>
                         </tr>
                         <tr>
-                            <th>時間数</th>
+                            <td>Office</td>
                             <td>48</td>
+                        </tr>
+                        <tr>                          
+                            <td>HTML&CSS</td>
                             <td>68</td>
+                        </tr>  
+                        <tr>
+                            <td>Python</td>
                             <td>168</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
                             <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>ポートフォリオ</td>
                             <td>36</td>
                         </tr>
                     </table>
                 </div>
                 <div class="s1-content2">
-                    <p>目指す資格</p>
+                    <h1>目指す資格</h1>
                     <dl>
-                        <dt>MOS Excel2016</dt>
+                        <dt><h3>MOS Excel2016</h3></dt>
                         <dd>Excelの利用スキルを証明できる資格です。</dd>
                         <dd>1000点中700点で合格</dd>
                     </dl>
                     <dl>
-                        <dt>Pythonエンジニア基礎試験</dt>
+                        <dt><h3>Pythonエンジニア基礎試験</h3></dt>
                         <dd>汎用プログラミング言語Pythonの専門知識を評価する試験です。</dd>
                         <dd>7割で合格。</dd>
                     </dl>
@@ -74,7 +84,7 @@
             </div>
         </section>
         <section class="section2">
-            <h1>おすすめサイト</h1>
+            <h1 id="s2">おすすめサイト</h1>
             <ul>
                 <li><a href="#">サンシャイン水族館</a></li>
                 <li><a href="#">楽天市場</a></li>
@@ -82,21 +92,26 @@
             </ul>
         </section>
         <section class="section3">
-            <h1>MYギャラリー</h1>
+            <h1 id="s3">MYギャラリー</h1>
             <div class="s3-container">
-                <img src="image/01.jpg" alt="画像">
-                <img src="image/02.jpg" alt="画像">
-                <img src="image/03.jpg" alt="画像">
-                <img src="image/04.jpg" alt="画像">
-                <img src="image/01.jpg" alt="画像">
-                <img src="image/02.jpg" alt="画像">
-                <img src="image/03.jpg" alt="画像">
-                <img src="image/04.jpg" alt="画像">  
+                <ul>
+                    <li><img src="image/01.jpg" alt="画像"></li>
+                    <li><img src="image/02.jpg" alt="画像"></li>
+                    <li><img src="image/03.jpg" alt="画像"></li>
+                    <li><img src="image/04.jpg" alt="画像"></li>
+                    <li><img src="image/01.jpg" alt="画像"></li>
+                    <li><img src="image/02.jpg" alt="画像"></li>
+                    <li><img src="image/03.jpg" alt="画像"></li>
+                    <li><img src="image/04.jpg" alt="画像"> </li>
+                </ul>                
             </div>
         </section>
         <section class="section4">
-            <iframe src="https://www.youtube.com/embed/HPEg_23U5wE?si=qOcg3Amr6-DbbPXL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/mqq7Hcz-OJ4?si=9KnT1hHwudmVTY_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1 id="s4">おすすめ動画</h1>
+            <div class="s4-container">
+                <iframe src="https://www.youtube.com/embed/HPEg_23U5wE?si=qOcg3Amr6-DbbPXL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mqq7Hcz-OJ4?si=9KnT1hHwudmVTY_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </article>
     <footer>
