@@ -6,8 +6,31 @@
     <title>ホームページ</title>
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesom -->
+    <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"rel="stylesheet">
+    <!-- JQuery bxslider -->
+    <link rel="stylesheet" href="js/jquery.bxslider.css">
+        <!-- script -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(function () {
+        
+        $('.fa-bars,.fa-xmark,.menu').on('click', function () {
+        
+        $('body').toggleClass('open');
+        
+        });
+        
+        });
+        
+    </script>    
 </head>
 <body>
+    <i class="fa-solid fa-bars fa-2x"></i>
+    <i class="fa-solid fa-xmark fa-2x"></i>
     <header>
         <div class="header-title">
             <h1 id="top">Nameのホームページ</h1>
@@ -22,8 +45,10 @@
         </nav>
     </header>
     <div class="main">
-        <div class="main-img">
+        <div class="firstview">
             <img src="image/main_visual.jpg" alt="メインビジュアル画像">
+            <img src="image/dog.jpg" alt="犬画像">
+            <img src="image/dog (2).jpg" alt="犬の画像">
         </div>
         <div class="main-catch">
             <h1>Nameのホームページへようこそ</h1>
@@ -73,12 +98,12 @@
                 <div class="s1-content2">
                     <h1>目指す資格</h1>
                     <dl>
-                        <dt><h3>MOS Excel2016</h3></dt>
+                        <dt><h3><i class="fa-solid fa-laptop"></i>MOS Excel2016</h3></dt>
                         <dd>Excelの利用スキルを証明できる資格です。</dd>
                         <dd>1000点中700点で合格</dd>
                     </dl>
                     <dl>
-                        <dt><h3>Pythonエンジニア基礎試験</h3></dt>
+                        <dt><h3><i class="fa-solid fa-laptop"></i>Pythonエンジニア基礎試験</h3></dt>
                         <dd>汎用プログラミング言語Pythonの専門知識を評価する試験です。</dd>
                         <dd>7割で合格。</dd>
                     </dl>
