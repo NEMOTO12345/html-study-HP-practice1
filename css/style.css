@@ -51,10 +51,18 @@ header nav ul li a:hover{
     width: 100%;
     z-index: 1;
     height: 100vh;
+    
 
 }
 
-.main img{
+.main-img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+.main-img img{
     height: 100%;
     width: 100%;
 }
@@ -62,7 +70,7 @@ header nav ul li a:hover{
 .main-catch{
     position: absolute;
     top: 10%;
-    right: 5%;
+    left: 5%;
     background-color: #ffffff40;
     padding: 10px 20px;
 }
@@ -187,3 +195,35 @@ article{
 footer{
     text-align: center;
 }
+iframe{
+    width: 50%;
+}
+/* レスポンシブ */
+
+@media (max-width:1024px) {
+    .main{
+        height: auto;
+    }
+}
+
+@media (max-width:600px) {
+    .s3-container ul{
+        grid-template-columns: 1fr 1fr;
+        margin: 9% auto;
+    }
+
+    .section4{
+        width: 100%;
+       
+    }
+    .section4 .s4-container{
+        display: block;
+        
+    
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+/* レスポンシブ */
